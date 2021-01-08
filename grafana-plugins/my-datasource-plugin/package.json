@@ -1,0 +1,30 @@
+{
+  "name": "kimmo-my-datasource-plugin",
+  "version": "1.0.0",
+  "description": "My datasource example",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build",
+    "test": "grafana-toolkit plugin:test",
+    "dev": "grafana-toolkit plugin:dev",
+    "watch": "grafana-toolkit plugin:dev --watch"
+  },
+  "author": "Silo",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@grafana/data": "^7.0.0",
+    "@grafana/toolkit": "^7.0.0",
+    "@grafana/ui": "^7.0.0",
+    "@testing-library/jest-dom": "5.4.0",
+    "@testing-library/react": "^10.0.2",
+    "@types/lodash": "latest"
+  },
+  "engines": {
+    "node": ">=12 <13"
+  },
+  "resolutions": {
+    "rxjs": "6.6.3"
+  },
+  "dependencies": {
+    "@grafana/runtime": "^7.3.6"
+  }
+}

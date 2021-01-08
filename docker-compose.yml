@@ -40,7 +40,17 @@ services:
       - 3000:3000
     networks:
       - grafana
-
+    environment: 
+      GF_PATHS_PLUGINS: /var/lib/grafana-plugins
+      GF_PATHS_CONFIG: /etc/grafana/grafana.ini
+      GF_PATHS_DATA: /var/lib/grafana-data
+      GF_PATHS_PROVISIONING: /etc/grafana/provisioning
+    volumes:
+      - ./provisioning:/etc/grafana/provisioning
+      - ./dashboards:/etc/grafana/dashboards
+      - ./grafana.ini:/etc/grafana/grafana.ini
+      - ./grafana-storage:/var/lib/grafana-data
+      - ./grafana-plugins:/var/lib/grafana-plugins
   app:
     build: ./app
     ports:

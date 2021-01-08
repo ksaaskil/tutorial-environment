@@ -1,0 +1,23 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.tslint": false,
+    "source.fixAll.stylelint": false
+  },
+  "vetur.validation.template": true,
+  "json.format.enable": false,
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+  "eslint.format.enable": true,
+  "eslint.validate": ["javascript", "typescript"],
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.enable": false,
+  "vetur.format.defaultFormatter.ts": "none",
+  "files.associations": {
+      "*.vue": "vue"
+  },
+  "[typescript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+}
